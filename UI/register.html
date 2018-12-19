@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--responsiveness of the browser-->
     <meta name="description" content="">
     <meta name="author" content="Mwesigwa david keneth">
-    <link rel="icon" href="img/logo.png">
-    <title> iReporter | Admin Login</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="icon" href="resources/images/logo.png">
+    <title> iReporter | Register</title>
+    <link rel="stylesheet" href="resources/css/style.css">
   </head>
 
 
@@ -19,26 +18,30 @@
       <div class="container">
         <div id="branding">
           <a href="#" class="logo">
-            <img src="img/logo.png" height="30px" width="30px">
+            <img src="resources/images/logo.png" height="30px" width="30px">
             <h1>i<span class="highlight">Reporter</span><h1>
           </a>
           
         </div>
         <nav>
           <ul>
-            <li class="current"><a href="login.html">User Login</a></li>
-            <li><a href="register.html">User Registration</a></li>
+            <li class="current"><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="landing-p admin" style="display: flex;">
+    <div class="landing-p " style="display: flex;">
     <main class="reg-main" >
       <section id="showcase" class="reg">
-        <p >Are you an Administrator? login here below.</p>
+        <p >Fill In your Personal Details Here Below</p>
         <div class="signup-form">
-        <form method="Post" action="admin-page.html">
+        <form method="Post" id="register-form" action="">
             <table>
+              <tr>
+                  <td><label>Full Name:</label></td>
+                  <td><input class="form-control" type="text" name="name" id="name" placeholder="enter your full name" ></td>
+              </tr>
               <tr>
                   <td><label>Email Address:</label></td>
                   <td><input class="form-control" type="email" name="email" id="email" placeholder="enter email" ></td>
@@ -47,18 +50,23 @@
                   <td><label>Password:</label></td>
                   <td><input class="form-control" type="password" name="password" id="password" placeholder="enter password " ></td>
               </tr>
+              <tr >
+                  <td><label>Confirm password:</label></td>
+                  <td><input class="form-control" type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password " ></td>
+              </tr>
             </table>
                     <div>
-                        <input type="submit" id="register" value="Login" class="button1">
+                        <input type="submit" id="register" value="Register" class="button1">
                     </div>
-             </form>
+          </form>
         </div>
       </section>
     </main>
   </div>
     
     <footer>
-     <p> &copy; 2018 iReporter , All Rights Reserved</p>   
+      <p> &copy; 2018 iReporter , All Rights Reserved</p>
     </footer>
+     <script src="resources/js/register.js"></script>
   </body>
 </html>
