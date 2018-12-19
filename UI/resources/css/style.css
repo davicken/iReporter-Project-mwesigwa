@@ -1,19 +1,47 @@
+
+@font-face {
+    font-family:Montserrat-Medium;
+    src: url(../../vendors/fonts/Montserrat-Medium.otf)
+}
+@font-face {
+    font-family:Montserrat-Regular;
+    src: url(../../vendors/fonts/Montserrat-Regular.otf)
+}
+@font-face {
+    font-family:Montserrat-Light;
+    src: url(../../vendors/fonts/Montserrat-Light.otf)
+}
+/***************************/
+h1, h2{
+    font-family: Montserrat-Medium;
+}
+h3, h4{
+    font-family: Montserrat-Regular;  
+}
+p{
+    font-family: Montserrat-Light;
+}
 body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: Montserrat-Light;
     margin:0px;
     padding:0px;
-    background: url(../img/back_g.png) repeat;
+    background: url(../images/back_g.png) repeat;
     position: relative;
     }
 
 a{
     text-decoration:none;
     color: #cccccc;
+    transition: all ease 1s;
 }
  a:active {
     color: #fff;
+}
+a:hover{
+   transform: scale(1.05); 
 }
    
 img{
@@ -87,6 +115,15 @@ header a:hover{
     border: 5px solid gold;
     margin: 50px;
     min-height: 340px;
+    display: flex;
+}
+.landing-p.record-details {
+    padding: 30px;
+    border-radius: 20px;
+    border: 5px solid gold;
+    margin: 50px;
+    min-height: 340px;
+    display: block;
 }
 .row-box {
   display: -ms-flexbox;
@@ -134,8 +171,7 @@ header a:hover{
     margin-right: auto;
     float: left;
     display: flex;
-    margin-top: 37px;
-
+    margin-top: 16px;
 }
 .record-details .barner {
     padding: 40px;
@@ -256,7 +292,7 @@ header a:hover{
 }
 
 .login-form {
-    width: 30%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -322,7 +358,7 @@ form textarea {
     margin-bottom: 120px;
     min-height: 200px;
     background: #A52A2A;
-    padding: 10px 10px 60px;
+    padding: 10px 30px 60px;
     height: 260px;
 }
 .record.create .signup-form {
@@ -359,7 +395,7 @@ form textarea {
     border: 0;
     color: #ffffff;
     float: left;
-    margin-left: 29%;
+    margin-left: 33%;
     font-weight: bold;
     width: 100px;
     border: 2px solid #ffff;
@@ -372,7 +408,7 @@ form textarea {
     border: 0;
     color: #ffffff;
     float: left;
-    margin-left: 42%;
+    margin-left: 46%;
     font-weight: bold;
     width: 100px;
     border: 2px solid #ffff;
@@ -409,7 +445,7 @@ form textarea {
     border: 0;
     color: #ffffff;
     float: left;
-    margin-left: 37%;
+    margin-left: 41%;
     font-weight: bold;
     width: 100px;
     border: 2px solid #ffff;
@@ -538,6 +574,10 @@ footer {
     float: right;
     margin-top: 20px;
     text-align: center;
+    
+}
+.buttonReject:hover {
+   box-shadow: 1px 1px 3px grey; 
 }
 .buttonInvest {
     background: orange;
@@ -550,6 +590,9 @@ footer {
     margin-top: 20px;
     text-align: center;
 }
+.buttonInvest:hover {
+   box-shadow: 1px 1px 3px grey; 
+}
 .buttonResolve {
     background: #00DED1;
     border-radius: 0px;
@@ -561,6 +604,9 @@ footer {
     margin-top: 20px;
     text-align: center;
 }
+.buttonResolve:hover {
+   box-shadow: 1px 1px 3px grey; 
+}
 .buttonView {
     background: #1E90FF;
     border-radius: 0px;
@@ -571,4 +617,17 @@ footer {
     float: right;
     margin-top: 20px;
     text-align: center;
+}
+.buttonView:hover {
+   box-shadow: 1px 1px 3px grey; 
+}
+.map-cordinates{
+    width: 100%;
+    padding: 6px;
+    background: transparent;
+    border:2px solid #fff;
+    color: #fff;
+}
+.gm-style .gm-style-iw {
+    color: #000!important;
 }
