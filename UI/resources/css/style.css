@@ -59,7 +59,7 @@ img{
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
+  /*width: 100%;*/
 }
 /*header */
 header {
@@ -96,7 +96,7 @@ header #branding h1 {
 header nav {
     float: right;
     margin-top: 10px;
-    margin-right: 4%;
+    margin-right: 5%;
 }
 
 header .highlight, header .current a{
@@ -108,6 +108,25 @@ header a:hover{
   font-weight:bold;
 }
 
+
+@media screen and (max-width: 768px){
+    .logo img {
+    height: 50px;
+    width: 65px;
+    margin-top: 10px;
+}
+header #branding h1 {
+    margin-top: -45px;
+    margin-left: 68px;
+    font-size: 25px;
+}
+.menu a{
+    font-size: 13px;
+}
+p{
+    font-size: 13px!important;
+}
+}
 /* END OF HEADER SECTION */
 .landing-p {
     padding: 30px;
@@ -157,7 +176,17 @@ header a:hover{
     background-color: #fff;
     color: #800000;
 }
+@media screen and (max-width: 768px){
 
+.landing-p {
+    padding: 5px;
+    border-radius: 20px;
+    border: 5px solid gold;
+    margin: 10px;
+    min-height: 340px;
+    display: flex;
+}
+}
 /*barner section*/
 .barner {
     width: 43%;
@@ -209,10 +238,11 @@ header a:hover{
 
 }
 @media(max-width: 768px){
-    .barner{
-        padding:30px;
-        height:800px;
-    }
+    .barner {
+    padding: 30px;
+    min-height: 300px;
+    display: none;
+}
     .barner img{
         width:90%;
         height: 100px;
@@ -220,7 +250,7 @@ header a:hover{
         
     }
     .barner h1{
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 400;
     padding-top: 10px;
         }
@@ -231,7 +261,7 @@ header a:hover{
 
    }
    .barner p{
-    font-size: 15px;
+    font-size: 13px;
    }
 
 
@@ -459,6 +489,41 @@ form textarea {
     width: 100px;
     object-fit: cover;
 }
+.reg-b a{
+  display: none;
+}
+@media screen and (max-width: 768px){
+    .reg-main {
+    width: 95%;
+}
+.admin-panel h2 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 15px;
+}
+.signup-form {
+    width: auto;
+}
+#register.button1 {
+    width: auto;
+}
+.landing-p.admin .signup-form {
+    width: auto;
+}
+.reg-b a {
+    display: block;
+    background: transparent;
+    width: 100px;
+    padding: 5px 10px;
+    border: 2px solid #800000;
+    margin-top: -140px;
+    text-align: center;
+    font-size: 13px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
 
 footer {
     padding: 20px;
@@ -559,6 +624,36 @@ footer {
 #myTable tr {
     border-bottom: 2px solid #800000;
 }
+
+@media screen and (max-width: 768px){
+    td label{
+        font-size: 13px;
+    }
+    .login-form {
+    width: auto;
+}
+#myTable th {
+    font-size: 14px;
+}
+#login.button1 {
+    height: 30px;
+    background: transparent;
+    border-radius: 0.5px;
+    border: 0;
+    color: #ffffff;
+    float: left;
+    margin-left: 30%;
+    font-weight: bold;
+    width: auto;
+    border: 2px solid #ffff;
+}
+#myTable td {
+    text-align: left;
+    padding: 12px;
+    border: 2px solid #800000;
+    font-size: 12px;
+}
+}
 /* the styling for the content */
 .content{
     padding-left: 50px;
@@ -630,4 +725,59 @@ footer {
 }
 .gm-style .gm-style-iw {
     color: #000!important;
+}
+
+/*for the toggle button on navigation bar*/
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px;
+    display: none;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #800000;
+    min-width: 160px;
+    overflow: auto;
+        overflow-x: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    float: left;
+    margin-top: 28px;
+    left: -400%;
+    width: 600%;
+    overflow-x: hidden;
+
+}
+.menu-content a {
+  color: #cccccc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropbtn {
+    width: 45px;
+    height: 35px;
+    border: 2px solid gold;
+}
+
+.menu a:hover {
+    background-color: transparent;
+}
+
+.show {display: block;}
+
+@media screen and (max-width:768px){
+    .menu {
+        display: inline-block;
+    }
+    .main-header {
+        display: none;
+    }
+    .wrapper {
+        background: blue;
+    }
 }

@@ -14,21 +14,32 @@
 
 
   <body>
-   <header>
+    <header>
       <div class="container">
         <div id="branding">
           <a href="#" class="logo">
             <img src="resources/images/logo.png" height="30px" width="30px">
-            <h1>i<span class="highlight">Reporter</span><h1>
+             <h1>i<span class="highlight">Reporter</span><h1>
           </a>
-          
+         
         </div>
-        <nav>
+        <nav class="main-header">
           <ul>
             <li class="current"><a href="login.html">Login</a></li>
             <li><a href="register.html">Register</a></li>
           </ul>
         </nav>
+        <!-- humbergur icon -->
+        <div class="menu">
+          <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+          <div id="mymenu" class="menu-content">
+            <ul>
+              <li class="current"><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </header>
     <div class="landing-p " style="display: flex;">
@@ -68,5 +79,6 @@
       <p> &copy; 2018 iReporter , All Rights Reserved</p>
     </footer>
      <script src="resources/js/register.js"></script>
+     <script src="resources/js/toggle-nav-button.js"></script>
   </body>
 </html>
