@@ -27,11 +27,23 @@
           </a>
          
         </div>
-        <nav>
+        <nav class="main-header">
           <ul>
             <li><a href="admin-page.html">Back</a></li>
             <li class="current"><a href="login.html">Logout</a></li>
+          </ul>
         </nav>
+        <!-- humbergur icon -->
+        <div class="menu">
+          <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+          <div id="mymenu" class="menu-content">
+            <ul>
+              <li><a href="admin-page.html">Back</a></li>
+            <li class="current"><a href="login.html">Logout</a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </header>
     <div class="landing-p record-details">
@@ -70,5 +82,7 @@
     <script src="vendors/googlemaps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWKk6emaNSe8Z3YpMt8lhwJ_tvH6WFOv4&callback=myMap"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFTTxFO8GmWAAgeI08CPZwqgS5s2FhNno&libraries=places"></script> -->
+    <script src="resources/js/toggle-nav-button.js"></script>
+
   </body>
 </html>
