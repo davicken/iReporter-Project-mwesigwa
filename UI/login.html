@@ -10,9 +10,11 @@
     <link rel="icon" href="resources/images/logo.png">
     <title> iReporter | Log in</title>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body class="bg">
+    <div class="fixed-header">
     <header>
       <div class="container">
         <div id="branding">
@@ -31,7 +33,7 @@
         </nav>
         <!-- humbergur icon -->
         <div class="menu">
-          <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+          <button onclick="myFunction1()" class="dropbtn">&#9776;</button>
           <div id="mymenu" class="menu-content">
             <ul>
               <li class="current"><a href="login.html">Login</a></li>
@@ -43,14 +45,20 @@
         </div>
       </div>
     </header>
+    <!-- Progress bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>   
     <div class="landing-p">
        <div class="barner col-6" id="barner"> 
         <div class="container">
             <div class="row-box">
                     <h1>iReporter corruption reporting and awareness platform</h1>
                      <p>
-                        Corruption is a huge bane to Africa’s development. African countries can use iReporter as a localised solution to curb this menace. iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
+                        Corruption is a huge bane to Africa’s development. African countries can use iReporter as a localised solution to curb this menace. iReporter enables any citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
                     </p>
+                    <p>You can be the start of a whole new transformed and corruption free african community by creating your account here below. </p>
                     <a href="register.html">Register Here </a>
             </div>
         </div>
@@ -85,13 +93,57 @@
       </main>
       </div>
 
+      <div class="my-grids">
+        <div class="row-box">
+          <h3>You can report any form of corruption or things that need government intervention to appropriate authorities and the general public.</h3>
+          <div class="col-4">
+            <div class="container">
+               <div class="content-tile">
+                <h2>Report Corruption</h2>
+                <div class="img-holder">
+                  <img src="resources/images/cor3.jpg" height="300px" width="">
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="container">
+               <div class="content-tile">
+                <h2>Report Darmaged roads</h2>
+                <div class="img-holder">
+                  <img src="resources/images/inter2.jpg" height="300px" width="">
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="container">
+               <div class="content-tile">
+                <h2>Report Landslides </h2>
+                <div class="img-holder">
+                  <img src="resources/images/inter3.jpg" height="300px" width="">
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
 <!-- END OF barner -->
+      <button onclick="topFunction()" id="myBtn" class="scroll-to-top" title="Scroll to the top"><i class="fa fa-chevron-up"></i></button>
+
     <footer>
-      <p> &copy; 2018 iReporter , All Rights Reserved</p>
+      <p> &copy; 2019 iReporter , All Rights Reserved</p>
     </footer>
 
     <script src="resources/js/login.js"></script>
     <script src="resources/js/toggle-nav-button.js"></script>
+    <script src="resources/js/scroll_to_top.js"></script>
+     <script src="resources/js/scroll-progress.js"></script>
   </body>
 </html>
 

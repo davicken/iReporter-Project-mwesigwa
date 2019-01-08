@@ -21,6 +21,9 @@ h3, h4{
 p{
     font-family: Montserrat-Light;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
     height: 100%;
@@ -28,9 +31,21 @@ body{
     font-family: Montserrat-Light;
     margin:0px;
     padding:0px;
-    background: url(../images/back_g.png) repeat;
+    background: url("../images/back_g.png") repeat;
     position: relative;
+    margin-top: 90px;
+    color: #333;
     }
+body.bg {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url("../images/bg1.jpg");
+        background-position-x: 0%, 0%;
+        background-position-y: 0%, 0%;
+        background-repeat: repeat, repeat;
+        background-size: auto auto, auto auto;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+}
 
 a{
     text-decoration:none;
@@ -62,14 +77,18 @@ img{
   /*width: 100%;*/
 }
 /*header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 header {
     background: #800000;
     color: #ffffff;
     padding: 10px;
     min-height: 70px;
-    border-bottom: #000 3px solid;
     width: 100%;
-    box-shadow: 0px 3px 5px grey;
 }
 /*all header links */
 header a {
@@ -126,14 +145,27 @@ header #branding h1 {
 p{
     font-size: 13px!important;
 }
+h3{
+    font-size: 15px;
+}
+h2{
+    font-size: 16px;
+}
+
+main {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
 }
 /* END OF HEADER SECTION */
 .landing-p {
-    padding: 30px;
+    padding: 50px 30px;
     border-radius: 20px;
     border: 5px solid gold;
     margin: 50px;
-    min-height: 340px;
+    min-height: 400px;
     display: flex;
 }
 .landing-p.record-details {
@@ -204,16 +236,16 @@ p{
 }
 .record-details .barner {
     padding: 40px;
-    background-color: #A52A2A;
+    background-color: rgba(0,0,0,0.05);
     background-size: cover;
-    color: #fff;
+    color: #222;
     border-radius: 20px;
     box-shadow: 2px 2px 5px #70753f;
     margin-left: auto;
     margin-right: auto;
     float: none;
     display: flex;
-    width: 90%;
+    width: auto;
 }
 .barner img {
     height: 300px;
@@ -222,7 +254,7 @@ p{
     margin-bottom: 30px;
 }
 .barner h1 {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: -6px;
 }
@@ -272,7 +304,15 @@ p{
 
 /* TABLET */
 
-
+.bg #showcase.reg {
+    height: 200px;
+    text-align: left;
+    color: #fff;
+    padding: 30px;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+}
 #showcase {
     height: 200px;
     text-align: left;
@@ -282,7 +322,7 @@ p{
 #showcase.reg {
     height: 200px;
     text-align: left;
-    color: #ffffff;
+    color: #333;
     padding: 30px;
     display:block;
     margin-right: auto;
@@ -333,11 +373,11 @@ p{
     padding: 10px;
 }
 form textarea {
-
-    width: 99%!important;
+    width: 99% !important;
     height: 100px;
     padding: 10px;
-
+    background-color: transparent;
+    border: 1px solid #888;
 }
 .user-edit-form
 {
@@ -379,17 +419,20 @@ form textarea {
     padding: 10px;
     height: 260px;
 }
+
 .record.create .signup-form {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-top: 0px;
     margin-bottom: 120px;
     min-height: 200px;
-    background: #A52A2A;
+    background: rgba(0,0,0,0.05);
     padding: 10px 30px 60px;
     height: 260px;
+    box-shadow: 2px 2px 5px silver;
+    border-radius: 10px;
+
 }
 .record.create .signup-form {
     height: auto;
@@ -410,13 +453,22 @@ form textarea {
 .form-control {
     width: 100%;
     background: none;
-    color: white;
+    color: #333;
     padding: 10px 5px 10px 5px;
     border-radius: 0px;
     margin: 5px 0px 5px 0px;
-    border: 2px solid white;
+    border: 1px solid #888;
     text-align: left;
-    
+}
+.bg .form-control {
+    width: 100%;
+    background: none;
+    color: #fff;
+    padding: 10px 5px 10px 5px;
+    border-radius: 0px;
+    margin: 5px 0px 5px 0px;
+    border: 2px solid #fff;
+    text-align: left;
 }
 #login.button1 {
     height: 30px;
@@ -444,21 +496,23 @@ form textarea {
     border: 2px solid #ffff;
 }
 .record.create #register.button1 {
+
     height: 30px;
     background: transparent;
     border-radius: 0.5px;
     border: 0;
-    color: #ffffff;
+    color: #333;
     float: left;
     margin-left: 20%;
     font-weight: bold;
     width: 100px;
-    border: 2px solid #ffff;
+    border: 2px solid #333;
     margin-top: 10px;
+
 }
 .landing-p.admin{
     height: 300px;
-    padding-top: 70px;
+    padding-top: 150px;
 }
 .landing-p.record{
     height: 300px;
@@ -525,6 +579,101 @@ form textarea {
 }
 }
 
+.my-grids {
+    padding: 10px 58px;
+}
+.my-grids h3 {
+    font-size: ;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #222;
+}
+.my-grids h2 {
+    font-size: ;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #A52A2A;
+    font-size: 20px;
+}
+.my-grids .content-tile {
+    background-color: #fff;
+    height: 400px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #000;
+}
+.my-grids .content-tile .img-holder{
+    height: 330px;
+    width: 100%;
+    overflow:hidden;
+
+}
+.my-grids .content-tile img{
+    background-color: #fff;
+    height: 330px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all ease 1s;
+}
+.my-grids .content-tile img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+/*progress bar on navigation*/
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #000;
+  box-shadow: 0px 3px 5px grey;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 4px;
+    background: red;
+    width: 0%;
+}
+
+
+/*scrol to the top button*/
+.scroll-to-top {
+
+    display: none;
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    font-size: 1.15em;
+    height: 40px;
+    width: 40px;
+    background: rgba(10,79,117) ;
+    line-height: 38px;
+    color: #ffffff;
+    z-index: 99;
+    text-align: center;
+    opacity: .3;
+    cursor: pointer;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+@media(max-width:768px){
+  .scroll-to-top {
+    right: 20px;
+    bottom: 20px;
+    font-size: 1.10em;
+    height: 30px;
+    width: 30px;
+    line-height: 18px;
+    padding: 5px;
+}
+}
+
 footer {
     padding: 20px;
     color: #ffffff;
@@ -587,6 +736,72 @@ footer {
 .col-12 {
     width:100%;
     float:left;
+}
+
+@media (max-width: 768px){
+.col-1 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+.col-2 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+.col-3 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+.col-4 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left
+}
+.col-5 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+.col-6 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+
+}
+.col-7 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+.col-8 {
+   width: 100%;
+    margin-bottom: 30px;
+    float: left;
+    padding-bottom:20px;
+}
+.col-9 {
+    width: 100%;
+    margin-bottom: 30px;
+    float:left;
+}
+.col-10 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+.col-11 {
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+
+}
+.col-12 {
+    width: 100%;
+    margin-bottom: 30px;
+    float:left;
+}
 }
 .login-form.col-4{
     float: right;
@@ -716,12 +931,12 @@ footer {
 .buttonView:hover {
    box-shadow: 1px 1px 3px grey; 
 }
-.map-cordinates{
+.map-cordinates {
     width: 100%;
     padding: 6px;
     background: transparent;
-    border:2px solid #fff;
-    color: #fff;
+    border: 1px solid #888;
+    color: #333;
 }
 .gm-style .gm-style-iw {
     color: #000!important;
