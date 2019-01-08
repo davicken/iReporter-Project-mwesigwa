@@ -36,5 +36,4 @@ Technology Used
     
 gh-page Url
   * The UI template can be found on this link https://davicken.github.io/iReporter-Project-mwesigwa/UI/login.html
-  
 

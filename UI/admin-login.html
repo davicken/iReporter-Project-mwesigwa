@@ -10,38 +10,46 @@
     <link rel="icon" href="resources/images/logo.png">
     <title> iReporter | Admin Login</title>
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
 
 
-  <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <a href="#" class="logo">
-            <img src="resources/images/logo.png" height="30px" width="30px">
-             <h1>i<span class="highlight">Reporter</span><h1>
-          </a>
-         
-        </div>
-        <nav class="main-header">
-          <ul>
-            <li class="current"><a href="login.html">User Login</a></li>
-            <li><a href="register.html">User Registration</a></li>
-          </ul>
-        </nav>
-        <!-- humbergur icon -->
-        <div class="menu">
-          <button onclick="myFunction()" class="dropbtn">&#9776;</button>
-          <div id="mymenu" class="menu-content">
+  <body class="bg">
+    <div class="fixed-header">
+      <header>
+        <div class="container">
+          <div id="branding">
+            <a href="#" class="logo">
+              <img src="resources/images/logo.png" height="30px" width="30px">
+               <h1>i<span class="highlight">Reporter</span><h1>
+            </a>
+           
+          </div>
+          <nav class="main-header">
             <ul>
               <li class="current"><a href="login.html">User Login</a></li>
-            <li><a href="register.html">User Registration</a></li>
+              <li><a href="register.html">User Registration</a></li>
             </ul>
-          </div>
+          </nav>
+          <!-- humbergur icon -->
+          <div class="menu">
+            <button onclick="myFunction1()" class="dropbtn">&#9776;</button>
+            <div id="mymenu" class="menu-content">
+              <ul>
+                <li class="current"><a href="login.html">User Login</a></li>
+              <li><a href="register.html">User Registration</a></li>
+              </ul>
+            </div>
 
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <!-- Progress bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+    </div>
+
     <div class="landing-p admin" style="display: flex;">
     <main class="reg-main" >
       <section id="showcase" class="reg">
@@ -62,15 +70,58 @@
                         <input type="submit" id="register" value="Login" class="button1">
                     </div>
              </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="my-grids">
+      <div class="row-box">
+        <h3>You can report any form of corruption or things that need government intervention to appropriate authorities and the general public.</h3>
+        <div class="col-4">
+          <div class="container">
+             <div class="content-tile">
+              <h2>Report Corruption</h2>
+              <div class="img-holder">
+                <img src="resources/images/cor3.jpg" height="300px" width="">
+              </div>
+               
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-  </div>
+        <div class="col-4">
+          <div class="container">
+             <div class="content-tile">
+              <h2>Report Darmaged roads</h2>
+              <div class="img-holder">
+                <img src="resources/images/inter2.jpg" height="300px" width="">
+              </div>
+               
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="container">
+             <div class="content-tile">
+              <h2>Report Landslides </h2>
+              <div class="img-holder">
+                <img src="resources/images/inter3.jpg" height="300px" width="">
+              </div>
+               
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
     
+    <button onclick="topFunction()" id="myBtn" class="scroll-to-top" title="Scroll to the top"><i class="fa fa-chevron-up"></i></button>
+
     <footer>
-     <p> &copy; 2018 iReporter , All Rights Reserved</p>   
+     <p> &copy; 2019 iReporter , All Rights Reserved</p>   
     </footer>
      <script src="resources/js/admin-login.js"></script>
      <script src="resources/js/toggle-nav-button.js"></script>
+     <script src="resources/js/scroll_to_top.js"></script>
+     <script src="resources/js/scroll-progress.js"></script>
   </body>
 </html>

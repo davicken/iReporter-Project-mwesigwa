@@ -10,9 +10,11 @@
         <link rel="icon" href="resources/images/logo.png">
         <title> iReporter | Red Flag Record</title>
         <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
 
   <body>
+    <div class="fixed-header">
     <header>
       <div class="container">
         <div id="branding">
@@ -31,7 +33,7 @@
         </nav>
         <!-- humbergur icon -->
         <div class="menu">
-          <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+          <button onclick="myFunction1()" class="dropbtn">&#9776;</button>
           <div id="mymenu" class="menu-content">
             <ul>
               <li class="current"><a href="user-page.html">Your Records</a></li>
@@ -43,6 +45,11 @@
         </div>
       </div>
     </header>
+    <!-- Progress bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div> 
     <div class="landing-p  record create" style="display: flex;">
       <main class="reg-main" >
         <section id="showcase" class="reg">
@@ -86,7 +93,7 @@
                 <tr>
                   <br>
                   <td class="label"><label>Location On Map: </label></td>
-                  <td><div id="googleMap" style="height: 250px; width:102%; margin-top: 10px;"></div></td>
+                  <td><div id="googleMap" style="height: 250px; width:102%; margin-top: 10px; border: 1px solid silver;"></div></td>
                   
                 </tr>
               </table>
@@ -102,12 +109,15 @@
     <script src="vendors/googlemaps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWKk6emaNSe8Z3YpMt8lhwJ_tvH6WFOv4&callback=myMap"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFTTxFO8GmWAAgeI08CPZwqgS5s2FhNno&libraries=places"></script> -->
+     <button onclick="topFunction()" id="myBtn" class="scroll-to-top" title="Scroll to the top"><i class="fa fa-chevron-up"></i></button>
 
     
     <footer>
-     <p> &copy; 2018 iReporter , All Rights Reserved</p>   
+     <p> &copy; 2019 iReporter , All Rights Reserved</p>   
     </footer>
     <script src="resources/js/edit-record.js"></script>
     <script src="resources/js/toggle-nav-button.js"></script>
+    <script src="resources/js/scroll_to_top.js"></script>
+     <script src="resources/js/scroll-progress.js"></script>
   </body>
 </html>

@@ -10,6 +10,7 @@
     <link rel="icon" href="resources/images/logo.png">
     <title> iReporter | Records Details</title>
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/locationpicker.jquery.min.js"></script>
@@ -18,6 +19,7 @@
 
   <body>
     <!-- for the map -->
+   <div class="fixed-header"> 
     <header>
       <div class="container">
         <div id="branding">
@@ -35,7 +37,7 @@
         </nav>
         <!-- humbergur icon -->
         <div class="menu">
-          <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+          <button onclick="myFunction1()" class="dropbtn">&#9776;</button>
           <div id="mymenu" class="menu-content">
             <ul>
               <li><a href="admin-page.html">Back</a></li>
@@ -46,6 +48,11 @@
         </div>
       </div>
     </header>
+    <!-- Progress bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+  </div>
     <div class="landing-p record-details">
       <h2 style="text-align: center; margin-top: -10px;"> ​Red-flag ​​Record </h2>
        <div class="barner" id="barner"> 
@@ -65,7 +72,7 @@
                  <!--  <input class="map-cordinates" type="text" disabled id="street_address" placeholder="Kamwokya, Kampala, Uganda"></td>
                   <br> -->
                   <p style="width: 100%">Location On Map: </p>
-                  <div id="googleMap" style="height: 250px; width:102%; margin-top: 10px;"></div>
+                  <div id="googleMap" style="height: 250px; width:102%; margin-top: 10px; border: 1px solid silver;"></div>
             </div>
         </div>
        </div>
@@ -73,16 +80,19 @@
 
 <!-- END OF barner -->
 
-   
+    <button onclick="topFunction()" id="myBtn" class="scroll-to-top" title="Scroll to the top"><i class="fa fa-chevron-up"></i></button>
+
     
     <footer>
-      <p> &copy; 2018 iReporter , All Rights Reserved</p>
+      <p> &copy; 2019 iReporter , All Rights Reserved</p>
     </footer>
     <!-- for the goofgle map -->
     <script src="vendors/googlemaps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWKk6emaNSe8Z3YpMt8lhwJ_tvH6WFOv4&callback=myMap"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFTTxFO8GmWAAgeI08CPZwqgS5s2FhNno&libraries=places"></script> -->
     <script src="resources/js/toggle-nav-button.js"></script>
+    <script src="resources/js/scroll_to_top.js"></script>
+     <script src="resources/js/scroll-progress.js"></script>
 
   </body>
 </html>

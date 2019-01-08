@@ -1,4 +1,4 @@
-function myFunction() {
+function myFunction1() {
     document.getElementById("mymenu").classList.toggle("show");
   }
   
