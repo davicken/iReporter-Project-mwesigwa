@@ -33,7 +33,7 @@ body{
     padding:0px;
     background: url("../images/back_g.png") repeat;
     position: relative;
-    margin-top: 90px;
+    margin-top: 100px;
     color: #333;
     }
 body.bg {
@@ -477,7 +477,6 @@ form textarea {
     border: 0;
     color: #ffffff;
     float: left;
-    margin-left: 33%;
     font-weight: bold;
     width: 100px;
     border: 2px solid #ffff;
@@ -490,7 +489,6 @@ form textarea {
     border: 0;
     color: #ffffff;
     float: left;
-    margin-left: 46%;
     font-weight: bold;
     width: 100px;
     border: 2px solid #ffff;
@@ -503,7 +501,6 @@ form textarea {
     border: 0;
     color: #333;
     float: left;
-    margin-left: 20%;
     font-weight: bold;
     width: 100px;
     border: 2px solid #333;
@@ -529,7 +526,6 @@ form textarea {
     border: 0;
     color: #ffffff;
     float: left;
-    margin-left: 41%;
     font-weight: bold;
     width: 100px;
     border: 2px solid #ffff;
@@ -857,7 +853,6 @@ footer {
     border: 0;
     color: #ffffff;
     float: left;
-    margin-left: 30%;
     font-weight: bold;
     width: auto;
     border: 2px solid #ffff;
