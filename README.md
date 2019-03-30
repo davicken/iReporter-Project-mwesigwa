@@ -1,7 +1,10 @@
-# iREPORTER PROJECT by Mwesigwa David Keneth 
+# iREPORTER PROJECT FRONT-END by Mwesigwa David Keneth 
   * iReporter is a corruption reporting and awareness platform that seeks for government intervention.
   * Corruption is a huge bane to Africa’s development. African countries must develop novel and localised solutions that will curb this menace, hence the birth of iReporter. iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
-
+  
+# gh-page Url
+  * The UI template can be found on this link https://davicken.github.io/iReporter-Project-mwesigwa/UI/login.html
+  
 # How It Works
 
 A) User
@@ -34,6 +37,5 @@ Technology Used
     * JS
     * Python
     
-gh-page Url
-  * The UI template can be found on this link https://davicken.github.io/iReporter-Project-mwesigwa/UI/login.html
+
 
